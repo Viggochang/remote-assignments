@@ -1,0 +1,71 @@
+/* ================================= 
+  Page Styles
+==================================== */
+
+html{
+  margin:0;
+}
+  
+body {
+  margin:0;
+}  
+
+header{
+  height:60px;
+  padding: 0 30px;
+  background-color:#DDDDDD;
+}
+  
+header h2{
+  margin:0;
+}
+ 
+.nav-icon img{
+  height: 60px;
+  width: auto;
+}
+  
+.nav-all{
+  display: none;
+}
+
+nav a{
+  text-decoration: none;
+  color: black;
+  margin: 20px;
+}
+  
+.banner{
+  width: 100%;
+  height: 100px;
+  background-color: #BCD5EC;
+}
+
+.banner h2{
+  margin: auto;
+}
+
+.container{
+  margin: 20px;
+}
+
+main {
+  padding:0 20px;
+  width: 100%;
+}
+
+.content-box {
+  height: 100px;
+  width: 100%;
+  margin: 10px;
+  background-color: #869DB7;
+  text-align: center;
+  padding:10px;
+}
+
+.button{
+  width: 200px;
+  height:50px;
+  margin: 50px;
+  background-color: #BCD5EC;
+}
