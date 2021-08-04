@@ -1,5 +1,5 @@
-const banner = document.querySelector(".banner h2");
+const banner = document.querySelector(".banner");
 
 banner.addEventListener("click", () => {
-    console.log(banner);
+    banner.textContent = "Have a Good Time!";
 })
