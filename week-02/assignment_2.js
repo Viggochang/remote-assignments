@@ -6,16 +6,16 @@ try using at least two ways to create a proper object as a parameter of the calc
 
 // create a proper object as a parameter !!
 
-function calculate(args){ 
+function calculate(args) {
     let result;
-    if(args.op === "+"){ 
+    if (args.op === "+") {
         result = args.n1 + args.n2;
-    } else if(args.op === "-"){ 
+    } else if (args.op === "-") {
         result = args.n1 - args.n2;
-    }else{
+    } else {
         result = "Not supported";
     }
-    return result; 
+    return result;
 }
 
 var args1 = {};
@@ -25,7 +25,7 @@ args1.op = "-";
 console.log(calculate(args1));
 
 
-function argsFunc(n1, n2, op){
+function argsFunc(n1, n2, op) {
     this.n1 = n1;
     this.n2 = n2;
     this.op = op;
@@ -34,7 +34,7 @@ const args2 = new argsFunc(3, 4, "+");
 console.log(calculate(args2));
 
 class argsClass {
-    constructor(n1, n2, op){
+    constructor(n1, n2, op) {
         this.n1 = n1;
         this.n2 = n2;
         this.op = op;
@@ -47,21 +47,21 @@ var args4 = {
     get n1() {
         return this._n1;
     },
-    set n1(n1){
+    set n1(n1) {
         this._n1 = n1;
     },
 
-    get n2(){
+    get n2() {
         return this._n2;
     },
-    set n2(n2){
+    set n2(n2) {
         this._n2 = n2;
     },
 
-    get op(){
+    get op() {
         return this._op;
     },
-    set op(op){
+    set op(op) {
         this._op = op;
     },
 };
