@@ -8,7 +8,7 @@ banner.addEventListener("click", () => {
     if (bannerMsg === "Welcome Message"){
         bannerMsg = "Have a Good Time!";
     } else {
-        bannerMsg = "HWelcome Message";
+        bannerMsg = "Welcome Message";
     }
 });
 
