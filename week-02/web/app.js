@@ -5,7 +5,7 @@ const navX = document.querySelector(".X")
 
 banner.addEventListener("click", () => {
     bannerMsg = banner.textContent
-    if (if bannerMsg === "Welcome Message"){
+    if (bannerMsg === "Welcome Message"){
         banner.textContent = "Have a Good Time!";
     } else {
         banner.textContent = "HWelcome Message"
