@@ -23,6 +23,7 @@ header h2{
 .nav-icon img{
   height: 60px;
   width: auto;
+  cursor: pointer;
 }
   
 .nav-all{
@@ -43,6 +44,7 @@ header h2{
 .nav-hidden .X{
   font-size: 20px;
   margin: 10px 20px;
+  cursor: pointer;
 }
 
 nav a{
@@ -89,4 +91,5 @@ main {
   height: 50px;
   margin: 50px;
   background-color: #BCD5EC;
+  cursor: pointer;
 }
