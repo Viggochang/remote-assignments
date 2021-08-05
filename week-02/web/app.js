@@ -8,9 +8,11 @@ banner.addEventListener("click", () => {
 });
 
 navIcon.addEventListener("click", () => {
-    navHidden.getElementsByClassName.display = "flex";
+    navHidden.style.display = "flex";
+    console.log("click nav-icon")
 });
 
 navX.addEventListener("click", () => {
-    navHidden.getElementsByClassName.display = "none";
+    navHidden.style.display = "none";
+    console.log("click X")
 });
