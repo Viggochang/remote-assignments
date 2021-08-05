@@ -4,7 +4,12 @@ const navHidden = document.querySelector(".nav-hidden");
 const navX = document.querySelector(".X")
 
 banner.addEventListener("click", () => {
-    banner.textContent = "Have a Good Time!";
+    bannerMsg = banner.textContent
+    if (if bannerMsg === "Welcome Message"){
+        banner.textContent = "Have a Good Time!";
+    } else {
+        banner.textContent = "HWelcome Message"
+    }
 });
 
 navIcon.addEventListener("click", () => {
