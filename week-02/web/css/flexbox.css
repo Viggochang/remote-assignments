@@ -12,9 +12,15 @@ header h2{
 }
 
 .nav-hidden{
-  display: none;
+  display: none;   /*點擊icon後會變成flex*/
   flex-direction: row;
   justify-content: space-between;
+}
+
+.nav-hidden .items{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
     
 main,

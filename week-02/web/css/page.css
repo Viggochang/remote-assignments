@@ -32,8 +32,8 @@ header h2{
 .nav-hidden{
   width: 50%;
   height: 100%;
-  position:absolute;
-  right:0;
+  position: fixed;
+  right: 0;
   background-color: white;
   z-index: 1;
 }
