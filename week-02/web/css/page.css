@@ -35,14 +35,14 @@ header h2{
   position: fixed;
   right: 0;
   background-color: white;
-  border: 1px gray solid;
+  border-left: 1px gray solid;
   box-shadow: 3px 3px 12px gray;
   z-index: 1;
 }
 
 .nav-hidden .X{
   font-size: 20px;
-  margin: 10px;
+  margin: 10px 20px;
 }
 
 nav a{
