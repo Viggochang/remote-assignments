@@ -12,6 +12,7 @@ header h2{
 }
 
 .nav-hidden{
+  display: none;
   flex-direction: row;
   justify-content: space-between;
 }

@@ -30,8 +30,8 @@ header h2{
 }
 
 .nav-hidden{
-  display: none;
   width: 50%;
+  height: 100%;
   background-color: white;
   z-index: 1;
 }
