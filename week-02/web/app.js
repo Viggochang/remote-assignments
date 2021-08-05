@@ -27,7 +27,7 @@ navX.addEventListener("click", () => {
 });
 
 actionButton.addEventListener("click", () => {
-    box56.style.display = "block";
-    box78.style.display = "block";
+    box56.style.display = "flex";
+    box78.style.display = "flex";
     console.log("click actionButton");
 });
