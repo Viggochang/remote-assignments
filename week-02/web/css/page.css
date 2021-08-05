@@ -38,6 +38,11 @@ header h2{
   z-index: 1;
 }
 
+.nav-hidden .X{
+  font-size: 20px;
+  margin:10px;
+}
+
 nav a{
   text-decoration: none;
   color: black;
