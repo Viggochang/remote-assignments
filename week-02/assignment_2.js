@@ -24,7 +24,6 @@ args1.n2 = 4;
 args1.op = "-";
 console.log(calculate(args1));
 
-
 function argsFunc(n1, n2, op) {
     this.n1 = n1;
     this.n2 = n2;
@@ -33,6 +32,12 @@ function argsFunc(n1, n2, op) {
 const args2 = new argsFunc(3, 4, "+");
 console.log(calculate(args2));
 
+function argsFunc2(n1, n2, op) {
+    return { n1, n2, op }
+}
+args3 = argsFunc2(3, 4, "+");
+console.log(calculate(args3));
+
 class argsClass {
     constructor(n1, n2, op) {
         this.n1 = n1;
@@ -40,33 +45,6 @@ class argsClass {
         this.op = op;
     }
 }
-const args3 = new argsClass(3, 4, "-");
-console.log(calculate(args3));
-
-var args4 = {
-    get n1() {
-        return this._n1;
-    },
-    set n1(n1) {
-        this._n1 = n1;
-    },
-
-    get n2() {
-        return this._n2;
-    },
-    set n2(n2) {
-        this._n2 = n2;
-    },
-
-    get op() {
-        return this._op;
-    },
-    set op(op) {
-        this._op = op;
-    },
-};
-args4.n1 = 3;
-args4.n2 = 4;
-args4.op = "+"
-
+const args4 = new argsClass(3, 4, "-");
 console.log(calculate(args4));
+
