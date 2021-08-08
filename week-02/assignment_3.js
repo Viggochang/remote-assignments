@@ -11,8 +11,6 @@ function avg(data) {
         sum += products[i].price;
     }
     return sum / size;
-
-
 }
 
 console.log(
