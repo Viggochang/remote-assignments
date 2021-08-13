@@ -49,11 +49,8 @@ app.listen(port, () => {
 });
 
 function sum(num) {
-    let ans = 0;
-    for (let i = 1; i <= num; i++) {
-        ans += i;
-    }
-    return ans;
+    const arr = Array(num).fill().map((val, index) => index + 1);
+    return arr.reduce((acc, cur) => acc + cur, 0);
 };
 
 function getSum(data) {
