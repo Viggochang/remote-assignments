@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>sum</title>
+
+</head>
+
+<body>
+    <h1> This is sum.html </h1>
+    <form action="" id="numForm">
+        <label> Please enter the number :<br></label>
+        <input type="text" name="number" id="number">
+    </form>
+    <button id="sendNum"> Submit </button>
+
+    <section id="sum"></section>
+</body>
+
+<script>
+    document.getElementById("sendNum").addEventListener('click', sendAJAX, false);
+
+    setXHR(10);
+
+    function sendAJAX() {
+        let number = document.getElementById("number").value;
+        document.getElementById("numForm").reset();
+        setXHR(number);
+    }
+
+    function setXHR(num) {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    document.getElementById("sum").innerHTML = xhr.responseText;
+                }
+            }
+        };
+        xhr.open("GET", `/getData?number=${num}`);
+        xhr.send();
+    }
+</script>
