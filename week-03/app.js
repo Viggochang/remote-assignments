@@ -23,7 +23,7 @@ app.get("/myName", (req, res) => {
     if (username) {
         res.send(`<h1>Hello ${username}</h1>`);
     } else {
-        res.redirect("/trackName");
+        res.render("trackName");
     }
 });
 
@@ -31,16 +31,16 @@ app.get("/trackName", (req, res) => {
     const { username } = req.query;
     if (username) {
         res.cookie("username", username);
-        res.redirect("/myName");
     }
+    res.redirect("/myName");
 
-    const usernameCookies = req.cookies.username;
-    if (usernameCookies) {
-        res.redirect("/myName");
-    }
-    else {
-        res.render("trackName");
-    }
+    // const usernameCookies = req.cookies.username;
+    // if (usernameCookies) {
+    //     res.redirect("/myName");
+    // }
+    // else {
+    //     res.render("trackName");
+    // }
 })
 
 const port = 3000;
