@@ -48,6 +48,7 @@ app.listen(port, () => {
     console.log(`This application is running on localhost:${port}!`);
 });
 
+
 function sum(num) {
     const arr = Array(num).fill().map((val, index) => index + 1);
     return arr.reduce((acc, cur) => acc + cur, 0);
