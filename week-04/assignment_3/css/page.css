@@ -1,0 +1,99 @@
+/* ================================= 
+  Page Styles
+==================================== */
+
+html{
+    margin:0;
+}
+
+body {
+    margin:0;
+}  
+
+header{
+    height:60px;
+    padding: 0 30px;
+    background-color:#DDDDDD;
+}
+
+header h2{
+    margin:0;
+}
+
+.nav-icon img{
+    height: 60px;
+    width: auto;
+    cursor: pointer;
+}
+
+.nav-all{
+    display: none;
+}
+
+.nav-hidden{
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    background-color: white;
+    border-left: 1px gray solid;
+    box-shadow: 3px 3px 12px gray;
+    z-index: 1;
+}
+
+.nav-hidden .X{
+    font-size: 20px;
+    margin: 10px 20px;
+    cursor: pointer;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+}
+
+.banner{
+    width: 100%;
+    height: 100px;
+    background-color: #BCD5EC;
+}
+
+.banner h2{
+    margin: auto;
+    cursor: pointer;
+}
+
+.container,
+.boxUp,
+.boxDown{
+    margin: 20px;
+}
+
+main {
+    padding:0 20px;
+    width: 100%;
+}
+
+.boxUp,
+.boxDown{
+    width: 100%;    
+}
+
+.content-box {
+    height: 100px;
+    width: 100%;
+    margin: 10px;
+    background-color: #869DB7;
+    text-align: center;
+    padding:10px;
+}
+
+.action-button{
+    width: 200px;
+    height: 50px;
+    margin: 50px;
+    background-color: #BCD5EC;
+    cursor: pointer;    
+}
+  
